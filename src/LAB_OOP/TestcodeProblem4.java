@@ -81,5 +81,15 @@ class staff extends Person{
 public class TestcodeProblem4 {
     public static void main(String[] args){
 
+ Person p1= new student("Chung Chi Tam","34 S3","IT",2026,22500.7);
+ Person p2= new student("Truong The Vinh", "Bconsuoitien","IT",2026,27000.7 );
+ Person p3= new staff("")
+
+
+
+
+
+
+
     }
 }
