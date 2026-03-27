@@ -93,7 +93,17 @@ public class TestcodeProblem4 {
         for(Person p:persons){
             System.out.println(p);
         }
-      
+        // ép class
+        student s= (student) p1;
+        s.setProgram("BA");
+        staff m= (staff) p3;
+        m.setSchool("HCMUT");
+        System.out.println("AFTER UPDATE:");
+        for (Person p:persons){
+            System.out.println(p);
+        }
+
+
 
 
 
