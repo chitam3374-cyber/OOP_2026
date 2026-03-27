@@ -83,7 +83,17 @@ public class TestcodeProblem4 {
 
  Person p1= new student("Chung Chi Tam","34 S3","IT",2026,22500.7);
  Person p2= new student("Truong The Vinh", "Bconsuoitien","IT",2026,27000.7 );
- Person p3= new staff("")
+ Person p3= new staff("To Hao Thanh","27 duong cu xa ", "IU", 500000);
+ Person p4= new staff("Nguyen Thanh Hien", "48 duong so 5", "us", 700000);
+        ArrayList<Person>persons=new ArrayList<>();
+        persons.add(p1);
+        persons.add(p2);
+        persons.add(p3);
+        persons.add(p4);
+        for(Person p:persons){
+            System.out.println(p);
+        }
+      
 
 
 
