@@ -71,6 +71,27 @@ class SchoolDirectionary{
 
 public class TestcodeProblem5 {
      static void main(String[] args){
+         Person p1= new student("Tran Hoang yen Vy ","abcxyz", "BIOLOGICAL TECHNOLOGY", 2026, 45000000);
+         Person p2= new student("Chung Chi Tam"," 34 duong s3", "INFORMATION TECHNOLOGY", 2026, 25000000  );
+         Person p3= new staff("To Hao Thanh","27 duong cu xa ", "IU", 500000);
+         Person p4= new staff("Nguyen Thanh Hien", "48 duong so 5", "us", 700000);
+         SchoolDirectionary sd=new SchoolDirectionary("INTERNATIONAL UNIVERSITY");
+         sd.addPerson(p1);
+         sd.addPerson(p2);
+         sd.addPerson(p3);
+         sd.addPerson(p4);
+         sd.printAllMember();
+         System.out.println("countStudent:"+sd.countStudent());
+         System.out.println("countStaff:"+sd.countStaff());
+         System.out.println("totalStudentFee:"+sd.totalStudentFee());
+         System.out.println("totalStaffPay:"+sd.totalStaffPay());
+         System.out.println("Find result:"+sd.findByname("Tran Hoang Yen Vy"));
+         System.out.println("Find result:"+sd.findByname("Chung Chi Tam"));
+
+
+
+
+
 
 
     }
