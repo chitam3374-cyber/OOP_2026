@@ -48,10 +48,11 @@ class SchoolDirectionary{
     }
     // dùng một mảng duyệt đây được gọi là tìm kiếm tuyến tính linear search
     //
-    public static Person findByname(ArrayList<Person>mem, String name){
-        for (Person p:mem){
-            if (p.getName().equals(name)){
-                return p;
+    public  Person findByname( String name){
+        for (int i=0; i<=members.size(); i++){
+            Person c=members.get(i);
+            if (c.getName().equals(name)){
+                return c;
             }
         }
         return null;
