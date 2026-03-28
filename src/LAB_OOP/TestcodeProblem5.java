@@ -46,6 +46,26 @@ class SchoolDirectionary{
         }
         return total;
     }
+    // dùng một mảng duyệt đây được gọi là tìm kiếm tuyến tính linear search
+    //
+    public static Person findByname(ArrayList<Person>mem, String name){
+        for (Person p:mem){
+            if (p.getName().equals(name)){
+                return p;
+            }
+        }
+        return null;
+    }
+    public void printAllMember(){
+        for (Person p:members){
+            System.out.println(p);
+        }
+    }
+
+    public String toString(){
+        return "Directoryname:"+DirectoryName+
+        "totalMember:"+members.size();
+    }
 
 }
 
