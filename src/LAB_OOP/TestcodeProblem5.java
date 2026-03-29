@@ -49,7 +49,7 @@ class SchoolDirectionary{
     // dùng một mảng duyệt đây được gọi là tìm kiếm tuyến tính linear search
     //
     public  Person findByname( String name){
-        for (int i=0; i<=members.size(); i++){
+        for (int i=0; i<members.size(); i++){
             Person c=members.get(i);
             if (c.getName().equals(name)){
                 return c;
@@ -72,8 +72,8 @@ class SchoolDirectionary{
 
 public class TestcodeProblem5 {
      static void main(String[] args){
-         Person p1= new student("Tran Hoang yen Vy ","abcxyz", "BIOLOGICAL TECHNOLOGY", 2026, 45000000);
-         Person p2= new student("Chung Chi Tam"," 34 duong s3", "INFORMATION TECHNOLOGY", 2026, 25000000  );
+         Person p1= new student("Tran Hoang Yen Vy","abcxyz", "BIOLOGICAL TECHNOLOGY", 2026, 450000);
+         Person p2= new student("Chung Chi Tam"," 34 duong s3", "INFORMATION TECHNOLOGY", 2026, 25_000);
          Person p3= new staff("To Hao Thanh","27 duong cu xa ", "IU", 500000);
          Person p4= new staff("Nguyen Thanh Hien", "48 duong so 5", "us", 700000);
          SchoolDirectionary sd=new SchoolDirectionary("INTERNATIONAL UNIVERSITY");
