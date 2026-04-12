@@ -2,8 +2,11 @@ package LAB_OOP;
 // Problem 1 30/3
 abstract class Member{
     private  String name;
+
+
     private String email;
     private String id;
+
     public Member(){
 
     }
@@ -41,6 +44,9 @@ abstract class Member{
 class Student extends  Member{
     private String Program;
     private int year;
+    public Student(){
+
+    }
     public Student(String name, String email, String id, String Program, int year){
         super(name,email,id);
         this.Program=Program;
@@ -67,7 +73,7 @@ class Student extends  Member{
         return Program+" "+year+" "+super.toString();
     }
 }
-class Staff extends Member{
+class Staff extends Member implements Payble{
     private String department;
     private double baseSalary;
     public Staff(String name, String email, String id, String department, double baseSalary){
@@ -95,9 +101,17 @@ class Staff extends Member{
     public String toString(){
         return department+" "+baseSalary+" "+super.toString();
     }
+    public double  calculatePayment(){
+        return baseSalary;
+    }
+
+    @Override
+    public double calculate() {
+        return 0;
+    }
 }
 public class TestProblem1 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Member s1 = new Student("Tam", "tam@gmail.com", "S01", "IT", 1);
         Member s2 = new Student("An", "an@gmail.com", "S02", "Business", 2);
 
@@ -111,6 +125,7 @@ public class TestProblem1 {
             System.out.println("Role: " + m.getRole());
             System.out.println("----------------");
         }
-
     }
 }
+
+
